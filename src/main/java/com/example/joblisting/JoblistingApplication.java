@@ -14,12 +14,12 @@ import springfox.documentation.spring.web.plugins.Docket;
 @SpringBootApplication
 public class JoblistingApplication {
 
-	@Bean
-	public Docket api() {
-		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.withClassAnnotation(RestController.class)).paths(PathSelectors.any())
-				.build().apiInfo(apiInfo()).useDefaultResponseMessages(false);
-	}
+//	@Bean
+//	public Docket api() {
+//		return new Docket(DocumentationType.SWAGGER_2).select()
+//				.apis(RequestHandlerSelectors.withClassAnnotation(RestController.class)).paths(PathSelectors.any())
+//				.build().apiInfo(apiInfo()).useDefaultResponseMessages(false);
+//	}
 
 	@Bean
 	public ApiInfo apiInfo() {

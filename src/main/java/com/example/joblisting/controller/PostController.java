@@ -23,10 +23,10 @@ public class PostController
     SearchRepository srepo;
 
     @ApiIgnore
-    @RequestMapping(value="/")
-    public void redirect(HttpServletResponse response) throws IOException {
-        response.sendRedirect("/swagger-ui.html");
-    }
+//    @RequestMapping(value="/")
+//    public void redirect(HttpServletResponse response) throws IOException {
+//        response.sendRedirect("/swagger-ui.html");
+//    }
 
     @GetMapping("/allPosts")
     @CrossOrigin
